@@ -13,7 +13,6 @@ $(document).ready(function() {
     // toggle class menu_active
     $('.toggle_button').click(function(e) {
         e.preventDefault();
-        $('.toggle_button').toggleClass('menu_active')
+        $('body').toggleClass('menu_active')
     });
-
 });
