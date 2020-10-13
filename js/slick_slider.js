@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    $('.slider').slick({
+    $('.advantages_slider').slick({
         slidesToShow: 1,
         variableWidth: true,
+        centerMode: true,
         infinite: false,
         focusOnSelect: true,
-        speed: 400,
-        easing: 'ease-in-out',
+        arrows: false,
     });
 });
