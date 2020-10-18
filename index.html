@@ -9,6 +9,9 @@
     <title>TOP Girls</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+
+
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -20,11 +23,23 @@
     <!-- header -->
     <header id="header" class="header">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-8">
-                    <div class="logo">TOP-Girls</div>
+            <div class="row align-items-center justify-content-between">
+                <div class="logo col-8 col-lg-3">
+                    <img src="assets/img/logo.png" alt="" class="logo_image d-none d-xl-inline">
+                    <div class="ml-lg-4">TOP-Girls</div>
                 </div>
-                <div class="col-4 d-flex justify-content-end">
+                <div class="col-lg-7 d-none d-lg-block">
+                    <div class="header_contacts d-flex justify-content-center align-items-center">
+                        <div class="phone_numbers">
+                            <a href="tel:+" class="phone_numbers_item"><img src="assets/img/svg/phone.svg" alt=""> (099) 666-14-88</a>
+                            <a href="tel:+" class="mt-1 phone_numbers_item"><img src="assets/img/svg/phone.svg" alt=""> (099) 666-14-88</a>
+                        </div>
+                        <a href="#callback" class="ml-5 nav_link brand_btn brand_btn__main">
+                            Перезвонить мне
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-2 d-flex justify-content-end">
                     <div class="toggle_button">
                         <div class="toggle_item toggle_item__top"></div>
                         <div class="toggle_item toggle_item__mid"></div>
@@ -34,9 +49,11 @@
             </div>
         </div>
         <div class="menu">
-            <div class="logo">TOP-Girls</div>
+            <div class="logo d-lg-none">
+                TOP-Girls
+            </div>
             <ul>
-                <li><a href="#promo" class="nav_link">Модель - это</a></li>
+                <li><a href="#promo" class="active nav_link">Модель - это</a></li>
                 <li><a href="#steps" class="nav_link">Как стать моделью</a></li>
                 <li><a href="#feedback" class="nav_link">Анкета</a></li>
                 <li><a href="#advantages" class="nav_link">Преимущества</a></li>
@@ -48,21 +65,29 @@
     <!-- header -->
     <!-- intro -->
     <section id="intro" class="section_intro">
-        <img src="assets/img/intro_mobile.jpg" alt="" class="intro_image">
+        <img src="assets/img/intro_mobile.jpg" alt="" class="intro_image d-sm-none">
+        <img src="assets/img/intro_ipad.jpg" alt="" class="intro_image d-none d-sm-inline">
+        <img src="assets/img/intro.jpg" alt="" class="intro_image d-none d-lg-inline">
         <div class="container">
-            <div class="intro_text">
-                <div class="text_box">
-                    Работа для девушек в сфере досуга и сопровождения
-                </div>
-                <div class="intro_button">
-                    <a href="#feedback" class="brand_btn brand_btn__main">
-                    Заполнить анкету
-                </a>
-                </div>
-                <div class="intro_button">
-                    <a href="#feedback" class="brand_btn brand_btn__second">
-                    Перезвонить мне
-                </a>
+            <div class="row">
+                <div class="col-xl-7">
+                    <div class="intro_text">
+                        <div class="text_box">
+                            Работа для девушек в сфере досуга и сопровождения
+                        </div>
+                        <div class="d-sm-flex">
+                            <div class="intro_button">
+                                <a href="#feedback" class="nav_link brand_btn brand_btn__main">
+                                Заполнить анкету
+                            </a>
+                            </div>
+                            <div class="intro_button ml-sm-4 d-lg-none">
+                                <a href="#feedback" class="nav_link brand_btn brand_btn__second">
+                                Перезвонить мне
+                            </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,30 +96,49 @@
     <!-- promo -->
     <section id="promo" class="section_promo">
         <div class="container">
-            <div class="section_title">
-                Работа эскорт-модели <br>
-                <span class="section_title__line">это</span>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section_title">
+                        <div class="section_title__inner_wrap">
+                            <span>Работа эскорт-модели</span>
+                            <br class="d-xl-none">
+                            <span>это</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <ul class="promo_list">
-                <li>Доход от 5000$</li>
-                <li>Свободный график работы</li>
-                <li>Путешествия по миру</li>
-                <li>Жизнь класса люкс</li>
-                <li>Полная конфиденциальность</li>
-                <li>Элитные знакомства</li>
+            <ul class="promo_list d-sm-flex justify-content-center">
+                <div>
+                    <li>Доход от 5000$</li>
+                    <li>Свободный график работы</li>
+                    <li>Путешествия по миру</li>
+                </div>
+                <div class="ml-sm-5">
+                    <li>Жизнь класса люкс</li>
+                    <li>Полная конфиденциальность</li>
+                    <li>Элитные знакомства</li>
+                </div>
             </ul>
         </div>
         <div class="promo_text_wrap">
             <div class="container">
-                <div class="image_wrap">
-                    <img src="assets/img/promo_mobile.jpg" alt="" class="promo_image">
-                </div>
-                <div class="text_box">
-                    <p class="text_box__1"> Приглашаем на работу девушек в возрасте от 18 лет, имеющих желание много зарабатывать и заводить новые перспективные знакомства с лицами vip класса
-                    </p>
-                    <p class="text_box__2">Средний заработок девушек при сотрудничестве с нами: $500 в день. Работа в эскорт агентстве – это прекрасный опыт и возможность вести интересную и полностью обеспеченную жизнь. Это трудно назвать работой. Скорее, это больше удовольствие,
-                        нежели работа. Вас ждут увлекательнейшие моменты проведенные в кругу звезд шоу бизнеса и высокопоставленными лицами в красивейших городах, общение с удачливыми и интересными людьми, покупки в модных магазинах, посещение дорогих
-                        ресторанов и проживание в шикарных апартаментах. Как показывает практика, изменить свою жизнь в лучшую сторону и заработать от $2000 до $7000 каждый месяц может любая девушка. Самое важное – верить в свои силы и иметь большое желание.</p>
+                <div class="row justify-content-center">
+                    <div class="col-sm-8 col-lg-5">
+                        <div class="image_wrap">
+                            <img src="assets/img/promo_mobile.jpg" alt="" class="promo_image">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <div class="text_box">
+                            <p class="text_box__1"> Приглашаем на работу девушек в возрасте от 18 лет, имеющих желание много зарабатывать и заводить новые перспективные знакомства с лицами vip класса
+                            </p>
+                            <p class="text_box__2">Средний заработок девушек при сотрудничестве с нами: $500 в день. Работа в эскорт агентстве – это прекрасный опыт и возможность вести интересную и полностью обеспеченную жизнь. Это трудно назвать работой. Скорее, это больше
+                                удовольствие, нежели работа. Вас ждут увлекательнейшие моменты проведенные в кругу звезд шоу бизнеса и высокопоставленными лицами в красивейших городах, общение с удачливыми и интересными людьми, покупки в модных магазинах,
+                                посещение дорогих ресторанов и проживание в шикарных апартаментах. Как показывает практика, изменить свою жизнь в лучшую сторону и заработать от $2000 до $7000 каждый месяц может любая девушка. Самое важное – верить в свои
+                                силы и иметь большое желание.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,15 +148,26 @@
     <!-- steps -->
     <section id="steps" class="section_steps">
         <div class="container">
-            <div class="section_title">
-                Как стать <br>
-                <span class="section_title__line">моделью</span>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section_title">
+                        <div class="section_title__inner_wrap">
+                            <span>Как стать</span>
+                            <br class="d-xl-none">
+                            <span>моделью</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="text_box">
-                Хотите узнать, подходите ли Вы на эту вакансию? Напишите нам или заполните анкету, и мы свяжемся с Вами.
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text_box">
+                        Хотите узнать, подходите ли Вы на эту вакансию? Напишите нам или заполните анкету, и мы свяжемся с Вами.
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-12">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-lg-4 steps_item_wrap">
                     <div class="steps_item">
                         <div class="step_title">
                             Заполнить анкету
@@ -125,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 col-sm-8 col-lg-4 steps_item_wrap">
                     <div class="steps_item">
                         <div class="step_title">
                             Пройти собеседование
@@ -138,7 +193,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 col-sm-8 col-lg-4 steps_item_wrap">
                     <div class="steps_item">
                         <div class="step_title">
                             Путешествуй и наслаждайся
@@ -146,9 +201,6 @@
                         <div class="image_wrap">
                             <img src="assets/img/step_mobile-3.jpg" alt="" class="step_image">
                         </div>
-                        <!-- <div class="steps_arrow">
-                            <img src="assets/img/svg/arrow.svg" alt="" class="arrow_image">
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -158,23 +210,31 @@
     <!-- invitation -->
     <section id="invitation" class="section_invitation">
         <div class="container">
-            <div class="image_wrap">
-                <img src="assets/img/invitation_mobile.jpg" alt="" class="invitation_image">
-            </div>
-            <div class="invitation_title">
-                ВЕСЬ МИР У ТВОИХ НОГ
-            </div>
-            <div class="text_box">
-                Набор ограничен, рекомендуем узнать о количестве свободных мест заранее даже если ты не планировала лететь в ближайшее время. Свяжись с нами в WhatsApp, Viber или Telegram добавь нас по номеру или нажми на ссылку ниже и выбери чат.
-            </div>
-            <div class="phone_numbers">
-                <a href="#">+3099-757-57-86</a>
-                <a href="#">+3099-878-86-86</a>
-            </div>
-            <div class="invitation_button">
-                <a href="#" class="brand_btn brand_btn__main">
-                    Связаться
-                </a>
+            <div class="row invitation_wrap">
+                <div class="col-sm-8 col-lg-5">
+                    <div class="image_wrap">
+                        <img src="assets/img/invitation_mobile.jpg" alt="" class="invitation_image">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="text_box_wrap">
+                        <div class="invitation_title">
+                            ВЕСЬ МИР У ТВОИХ НОГ
+                        </div>
+                        <div class="text_box">
+                            Набор ограничен, рекомендуем узнать о количестве свободных мест заранее даже если ты не планировала лететь в ближайшее время. Свяжись с нами в WhatsApp, Viber или Telegram добавь нас по номеру или нажми на ссылку ниже и выбери чат.
+                        </div>
+                        <div class="phone_numbers">
+                            <a href="tel:+">(099) 666-14-88,</a>
+                            <a href="tel:+">(099) 666-14-88</a>
+                        </div>
+                        <div class="invitation_button">
+                            <a href="#" class="brand_btn brand_btn__main">
+                                Связаться
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -182,15 +242,24 @@
     <!-- conditions -->
     <section id="conditions" class="section_conditions">
         <div class="container">
-            <div class="image_wrap">
-                <img src="assets/img/conditions_mobile.jpg" alt="" class="conditions_image">
-            </div>
-            <div class="conditions_title">
-                Условия по сотрудничеству
-            </div>
-            <div class="text_box">
-                Вы уже, наверное, ознакомились с тем, что означает работа в эскорте. Теперь позвольте познакомить Вас с самой интересной частью нашего делового предложения. Вот условия, которые мы предлагаем Вам, если Вы твердо определитесь сотрудничать с нами. На протяжении
-                10-ти лет удачной деятельности в этой сфере бизнеса, мы собрали огромную базу проверенных и очень хорошо обеспеченных клиентов.
+            <div class="row justify-content-center justify-content-lg-between">
+                <div class="col-sm-8 col-lg-6">
+                    <div class="image_wrap">
+                        <img src="assets/img/conditions_mobile.jpg" alt="" class="conditions_image">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="conditions_title">
+                        Условия по сотрудничеству
+                    </div>
+                    <div class="text_box">
+                        Вы уже, наверное, ознакомились с тем, что означает работа в эскорте. Теперь позвольте познакомить Вас с самой интересной частью нашего делового предложения. Вот условия, которые мы предлагаем Вам, если Вы твердо определитесь сотрудничать с нами. На протяжении
+                        10-ти лет удачной деятельности в этой сфере бизнеса, мы собрали огромную базу проверенных и очень хорошо обеспеченных клиентов. Мы заботимся о Вас и гарантируем Вам полную конфиденциальность. Если Вы не имеете профессионального
+                        портфолио, мы предоставим Вам замечательных фотографов, которые помогут сделать прекрасные снимки. Чаще всего, с клиентами вы проводите несколько часов, но если Вы найдете общий язык, то он, разумеется, может остаться и на более
+                        длительное время, а время, как Вы знаете – это деньги. Поэтому, хорошее и приятное общение является очень существенным Вашим достоинством. Вы должны быть серьезно мотивированы заработать большие деньги и в тоже время максимально
+                        концентрироваться на приятном времяпрепровождении с клиентом. В таком случае Вы гарантированно сможете заработать больше.
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -198,26 +267,34 @@
     <!-- feedback -->
     <section id="feedback" class="section_feedback">
         <div class="container">
-            <div class="section_title">
-                <span class="section_title__line">Анкета</span>
-            </div>
-            <div class="feedback_wrap">
-                <div class="feedback_response">
-                    Спасибо! <br> Мы свяжемся с вами в ближайшее время!
-                </div>
-                <form action="" class="feedback_form">
-                    <input type="text" class="input" placeholder="Имя">
-                    <input type="text" class="input" placeholder="Возраст">
-                    <input type="text" class="input" placeholder="Рост">
-                    <input type="text" class="input" placeholder="Вес">
-                    <input type="text" class="input" placeholder="Телефон">
-                    <input type="text" class="input" placeholder="Прикрепить фото">
-                    <div class="form_button">
-                        <button id="feedback_button" class="brand_btn brand_btn__main">
-                            Отправить анкету
-                        </button>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title">
+                        <span>Анкета</span>
                     </div>
-                </form>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-8 col-lg-6">
+                    <div class="feedback_wrap">
+                        <div class="feedback_response">
+                            Спасибо! <br> Мы свяжемся с вами в ближайшее время!
+                        </div>
+                        <form action="" class="feedback_form">
+                            <input type="text" class="input" placeholder="Имя">
+                            <input type="text" class="input" placeholder="Возраст">
+                            <input type="text" class="input" placeholder="Рост">
+                            <input type="text" class="input" placeholder="Вес">
+                            <input type="text" class="input" placeholder="Телефон">
+                            <input type="text" class="input" placeholder="Прикрепить фото">
+                            <div class="form_button">
+                                <button id="feedback_button" class="brand_btn brand_btn__main">
+                                    Отправить анкету
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -225,56 +302,76 @@
     <!-- advantages -->
     <section id="advantages" class="section_advantages">
         <div class="container">
-            <div class="section_title">
-                Наши <br>
-                <span class="section_title__line">преимущества</span>
-            </div>
-        </div>
-        <div class="advantages_slider">
-            <div class="advantages_item">
-                <div class="advantages_title">
-                    Свободный график
-                </div>
-                <div class="advantages_description">
-                    Ты сама выбираешь куда, когда и на сколько хочешь полететь и согласовываешь даты с своим личным менеджером.
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section_title">
+                        <div class="section_title__inner_wrap">
+                            <span>Наши</span>
+                            <br class="d-xl-none">
+                            <span>преимущества</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="advantages_item">
-                <div class="advantages_title">
-                    Большой выбор
+
+            <div class="advantages_slider row justify-content-lg-around">
+                <div class="advantages_item col-lg-5 mt-lg-0">
+                    <div class="advantages_title">
+                        Высокий доход
+                    </div>
+                    <div class="advantages_description">
+                        Высокий доход девушек от $3000 - $5000 в месяц с перспективой роста и развития. Все зависит только от тебя и твоего желания.
+                    </div>
                 </div>
-                <div class="advantages_description">
-                    Мы предоставляем широкий выбор стран и вакансий по всем миру персонально для тебя с наилучшими условиями.
+                <div class="advantages_item col-lg-5 mt-lg-0">
+                    <div class="advantages_title">
+                        Свободный график
+                    </div>
+                    <div class="advantages_description">
+                        Ты сама выбираешь куда, когда и на сколько хочешь полететь и согласовываешь даты с своим личным менеджером.
+                    </div>
                 </div>
-            </div>
-            <div class="advantages_item">
-                <div class="advantages_title">
-                    Персональный менеджер
+                <div class="advantages_item col-lg-5">
+                    <div class="advantages_title">
+                        Большой выбор
+                    </div>
+                    <div class="advantages_description">
+                        Мы предоставляем широкий выбор стран и вакансий по всем миру персонально для тебя с наилучшими условиями.
+                    </div>
                 </div>
-                <div class="advantages_description">
-                    Твой личный менеджер всегда с радостью ответит на твои вопросы, поможет в любой ситуации и подберет для тебя тур.
+                <div class="advantages_item col-lg-5">
+                    <div class="advantages_title">
+                        Персональный менеджер
+                    </div>
+                    <div class="advantages_description">
+                        Твой личный менеджер всегда с радостью ответит на твои вопросы, поможет в любой ситуации и подберет для тебя тур.
+                    </div>
                 </div>
-            </div>
-            <div class="advantages_item">
-                <div class="advantages_title">
-                    Без опыта
+                <div class="advantages_item col-lg-5">
+                    <div class="advantages_title">
+                        Без опыта
+                    </div>
+                    <div class="advantages_description">
+                        Для работы не требуется опыт, мы бесплатно тебе все расскажем, покажем и проконсультируем. А также обучим при необходимости
+                    </div>
                 </div>
-                <div class="advantages_description">
-                    Для работы не требуется опыт, мы бесплатно тебе все расскажем, покажем и проконсультируем. А также обучим при необходимости
-                </div>
-            </div>
-            <div class="advantages_item">
-                <div class="advantages_title">
-                    Абсолютно легально
-                </div>
-                <div class="advantages_description">
-                    Работа легальна в большом количестве стран таких как Германия, Швейцария, Голландия, Англия, США и многих других в том числе в сфере досуга и эскорта.
+                <div class="advantages_item col-lg-5">
+                    <div class="advantages_title">
+                        Абсолютно легально
+                    </div>
+                    <div class="advantages_description">
+                        Работа легальна в большом количестве стран таких как Германия, Швейцария, Голландия, Англия, США и многих других в том числе в сфере досуга и эскорта.
+                    </div>
                 </div>
             </div>
         </div>
         <div class="advantages_text">
             <div class="container">
-                Все наши модели получается самые выгодные условия по оплате. Минимальная заработная плата $5000 в месяц! Выплачивается ежедневно, без задержек и вычетов.
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        Все наши модели получается самые выгодные условия по оплате. Минимальная заработная плата $5000 в месяц! Выплачивается ежедневно, без задержек и вычетов.
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -282,57 +379,67 @@
     <!-- faq -->
     <section id="faq" class="section_faq">
         <div class="container">
-            <div class="section_title">
-                Отвечаем на <br>
-                <span class="section_title__line">вопросы</span>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section_title">
+                        <div class="section_title__inner_wrap">
+                            <span>Отвечаем на</span>
+                            <br class="d-xl-none">
+                            <span>вопросы</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="accordion" id="accordionExample">
-                <div class="card">
-                    <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="">
-                        <div class="card_title"> Какие клиенты пользуются услугами эскорт девушек ?</div>
-                    </div>
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="">
+                                <div class="card_title"> Какие клиенты пользуются услугами эскорт девушек ?</div>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="">
-                        <div> Станет ли мое обращение к Вам конфиденциальным ? </div>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        <div class="card">
+                            <div class="card-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="">
+                                <div> Станет ли мое обращение к Вам конфиденциальным ? </div>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header collapsed" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="">
-                        <div> Бывают ли у эскорт девушек выходные ? </div>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                        <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        <div class="card">
+                            <div class="card-header collapsed" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="">
+                                <div> Бывают ли у эскорт девушек выходные ? </div>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header collapsed" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="">
-                        <div> Должна ли девушка быть модельной внешности ? </div>
-                    </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                        <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        <div class="card">
+                            <div class="card-header collapsed" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="">
+                                <div> Должна ли девушка быть модельной внешности ? </div>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                    craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -343,41 +450,63 @@
     <!-- footer -->
     <section id="contacts" class="section_footer">
         <div class="container">
-            <div class="section_title">
-                <span class="section_title__line">
-                    Контакты
-                </span>
-            </div>
-            <ul class="contacts_list">
-                <li>
-                    <a href=""><img src="assets/img/svg/maps.svg" alt="" class="">Singel 542, 1017 Киев, Украина</a>
-                </li>
-                <li>
-                    <a href=""><img src="assets/img/svg/mail.svg" alt="">mail@topgirls.kiev.ua</a>
-                </li>
-                <li>
-                    <a href=""><img src="assets/img/svg/phone.svg" alt="">099 666 14 88</a>
-                </li>
-                <li>
-                    <a href=""><img src="assets/img/svg/phone.svg" alt="">099 666 14 88</a>
-                </li>
-            </ul>
-            <div class="callback_wrap">
-                <div class="callback_title">
-                    Обратная связь
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title">
+                        <span>
+                            Контакты
+                        </span>
+                    </div>
                 </div>
-                <div class="callback_response">
-                    Спасибо! <br> Мы свяжемся с вами в ближайщее время!
-                </div>
-                <form action="" class="callback_form">
-                    <input type="text" class="input" placeholder="Имя">
-                    <input type="text" class="input" placeholder="Телефон">
-                    <button id="callback_button" class="brand_btn brand_btn__main">
-                            Отправить
-                        </button>
-                </form>
             </div>
-            <ul class="social_board">
+            <div class="row justify-content-center">
+                <div class="col-sm-8 col-lg-7">
+                    <ul class="contacts_list">
+                        <li>
+                            <a href=""><img src="assets/img/svg/maps.svg" alt="">Singel 542, 1017 Киев, Украина</a>
+                        </li>
+                        <li>
+                            <a href=""><img src="assets/img/svg/mail.svg" alt="">mail@topgirls.kiev.ua</a>
+                        </li>
+                        <li>
+                            <a href=""><img src="assets/img/svg/phone.svg" alt="">(099)666-14-88</a>
+                        </li>
+                        <li>
+                            <a href=""><img src="assets/img/svg/phone.svg" alt="">(099)666-14-88</a>
+                        </li>
+                    </ul>
+                    <ul class="social_board d-none d-lg-flex">
+                        <li>
+                            <a href="#"><img src="assets/img/svg/fb.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/img/svg/instagram.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/img/svg/telegram.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-8 col-lg-3">
+                    <div class="callback_wrap">
+                        <div class="callback_title">
+                            Обратная связь
+                        </div>
+                        <div class="callback_response">
+                            Спасибо! <br> Мы свяжемся с вами в ближайщее время!
+                        </div>
+                        <form action="" class="callback_form">
+                            <input type="text" class="input" placeholder="Имя">
+                            <input type="text" class="input" placeholder="Телефон">
+                            <button id="callback_button" class="brand_btn brand_btn__main">
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="social_board d-lg-none">
                 <li>
                     <a href="#"><img src="assets/img/svg/fb.svg" alt=""></a>
                 </li>

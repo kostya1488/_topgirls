@@ -18,18 +18,10 @@ $(document).ready(function() {
         return false
     });
 
-    // $('.nav_link').click(function(e) {
-    //     e.preventDefault();
-
-    //     let id = $(this).attr('href');
-    //     let top = $(id).offset().top;
-
-    //     $('body,html').animate({ scrollTop: top }, 900);
-    //     $('body').removeClass('menu_active')
-    // });
-
     $(".nav_link").on("click", function(e) {
         e.preventDefault();
+        $(".nav_link").removeClass('active');
+        $(this).addClass('active');
 
         let id = $(this).attr('href');
         let top = $(id).offset().top;
