@@ -6,18 +6,6 @@ $(document).ready(function() {
         $('body').toggleClass('menu_active')
     });
 
-    $('#callback_button').click(function(e) {
-        e.preventDefault();
-        $('.callback_wrap').toggleClass('form_send');
-        return false
-    });
-
-    $('#feedback_button').click(function(e) {
-        e.preventDefault();
-        $('.feedback_wrap').toggleClass('form_send');
-        return false
-    });
-
     $(".nav_link").on("click", function(e) {
         e.preventDefault();
         $(".nav_link").removeClass('active');

@@ -1,7 +1,13 @@
 $(document).ready(function() {
-    $("#ajax_form").submit(
+    $("#ajax_form_1").submit(
         function() {
-            sendAjaxForm('ajax_form', 'php/formhandler.php');
+            sendAjaxForm('ajax_form_1', 'php/formhandler_1.php');
+            return false;
+        }
+    );
+    $("#ajax_form_2").submit(
+        function() {
+            sendAjaxForm('ajax_form_2', 'php/formhandler_2.php');
             return false;
         }
     );
@@ -15,11 +21,11 @@ function sendAjaxForm(ajax_form, url) {
         data: $("#" + ajax_form).serialize(),
         success: function(response) {
             result = $.parseJSON(response);
-            alert("Well done");
+            $('.' + ajax_form + '_wrap').toggleClass('form_send');
         },
         error: function(response) {
-            alert("error");
-
+            $('.form_response').html('Ошибка!<br>Форма не отправлена');
+            $('.' + ajax_form + '_wrap').toggleClass('form_send');
         }
     });
 
