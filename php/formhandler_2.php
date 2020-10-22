@@ -1,5 +1,5 @@
 <?php
-$to = "matvienkoigor956@gmail.com";
+$to = "info@topgirls.kiev.ua";
 $subject = "Обратный звонок";
 $headers = "From: message@topgirls.kiev.ua";
 

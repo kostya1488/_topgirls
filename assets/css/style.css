@@ -210,7 +210,7 @@ section {
         top: 59px;
         right: 100px; }
       .header .toggle_button::before {
-        background-color: rgba(0, 0, 0, 0.1); } }
+        background-color: rgba(33, 37, 46, 0.6); } }
   @media (min-width: 1200px) and (max-width: 1440px) {
     .header .toggle_button {
       right: 30px; } }
@@ -281,6 +281,8 @@ section {
         font-size: 20px;
         font-weight: 500;
         opacity: 0.9; }
+        .section_intro .phone_numbers_item img {
+          margin-right: 20px; }
       .section_intro .text_box {
         font-size: 65px;
         margin-top: 40%;
@@ -415,7 +417,13 @@ section {
       font-weight: 600;
       font-family: 'Spectral', serif;
       font-size: 30px;
-      margin-bottom: 15px; }
+      position: relative; }
+      .section_advantages .advantages_bottom_text .text_title::after {
+        content: "";
+        display: inline-block;
+        height: 2px;
+        width: 70px;
+        background-color: #000; }
     .section_advantages .advantages_bottom_text p {
       font-size: 20px; }
   @media (min-width: 992px) {
@@ -442,8 +450,8 @@ section {
       border-radius: 5px;
       background-color: #21252E;
       margin: 0 10px;
-      padding: 50px 40px;
-      min-height: 310px;
+      padding: 50px 25px;
+      min-height: 335px;
       max-width: 275px; }
       .section_advantages .advantages_item .advantages_title {
         text-align: center;
